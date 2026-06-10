@@ -42,6 +42,8 @@ export interface Project {
   tint: string
   /** Which generated preview scene to render */
   art: ArtKind
+  /** Optional real screenshot (path under public/) — overrides the generated art */
+  image?: string
 }
 
 export const featuredProjects: Project[] = [
@@ -55,6 +57,7 @@ export const featuredProjects: Project[] = [
     liveUrl: 'https://allinoroutmoving.com',
     tint: '#60a5fa',
     art: 'moving',
+    image: '/projects/allinoroutmoving.jpg',
   },
   {
     title: 'Heelora',

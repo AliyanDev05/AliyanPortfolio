@@ -321,6 +321,36 @@ export type ArtKind = keyof typeof scenes
 
 export default function ProjectArt({ project, className = '' }: { project: Project; className?: string }) {
   const Scene = scenes[project.art]
+
+  if (project.image) {
+    return (
+      <div
+        className={`relative overflow-hidden rounded-xl border border-line bg-elevated transition-transform duration-300 group-hover:scale-[1.02] ${className}`}
+      >
+        <div className="flex items-center gap-1.5 border-b border-line bg-[#11141a] px-4 py-2.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" aria-hidden="true" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" aria-hidden="true" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" aria-hidden="true" />
+          <span className="ml-3 h-3.5 w-2/5 rounded-full bg-white/5" aria-hidden="true" />
+        </div>
+        <img
+          src={project.image}
+          alt={`Screenshot of ${project.title}`}
+          width={1280}
+          height={720}
+          loading="lazy"
+          decoding="async"
+          className="block h-auto w-full"
+        />
+        <div
+          className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full blur-3xl"
+          style={{ backgroundColor: `${project.tint}1f` }}
+          aria-hidden="true"
+        />
+      </div>
+    )
+  }
+
   return (
     <div
       className={`relative overflow-hidden rounded-xl border border-line bg-elevated transition-transform duration-300 group-hover:scale-[1.02] ${className}`}
