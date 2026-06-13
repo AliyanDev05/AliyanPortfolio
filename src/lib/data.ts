@@ -198,6 +198,15 @@ export const services = [
   },
 ]
 
+export const videoTestimonial = {
+  src: '/full-stack-website-developer.mp4',
+  name: 'Shon Jhon Stewart',
+  role: 'CEO, Middleman',
+  initials: 'SS',
+  tint: '#a3e635',
+  caption: 'A word from a client — in their own words.',
+}
+
 export const testimonials = [
   {
     quote:

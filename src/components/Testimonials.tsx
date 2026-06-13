@@ -1,5 +1,6 @@
 import { Star } from 'lucide-react'
-import { testimonials } from '../lib/data'
+import { testimonials, videoTestimonial } from '../lib/data'
+import VideoTestimonial from './VideoTestimonial'
 import { Reveal, Section } from './ui'
 
 function Stars() {
@@ -24,6 +25,19 @@ export default function Testimonials() {
         </>
       }
     >
+      <Reveal>
+        <div className="mx-auto mb-12 max-w-3xl">
+          <VideoTestimonial
+            src={videoTestimonial.src}
+            caption={videoTestimonial.caption}
+            name={videoTestimonial.name}
+            role={videoTestimonial.role}
+            initials={videoTestimonial.initials}
+            tint={videoTestimonial.tint}
+          />
+        </div>
+      </Reveal>
+
       <div className="grid gap-6 md:grid-cols-3">
         {testimonials.map((testimonial, i) => (
           <Reveal key={testimonial.quote} delay={i * 0.08}>
