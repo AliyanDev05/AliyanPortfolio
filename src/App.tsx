@@ -3,6 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
+import FeaturedVideo from './components/FeaturedVideo'
 import Projects from './components/Projects'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -24,6 +25,7 @@ export default function App() {
       <main>
         <Hero />
         <Marquee />
+        <FeaturedVideo />
         <Projects />
         <About />
         <Experience />

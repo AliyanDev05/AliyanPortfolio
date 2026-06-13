@@ -6,8 +6,8 @@ interface VideoTestimonialProps {
   /** Optional poster image (path under public/). If omitted, the frame at
    *  ~2s is shown as the still via a media fragment — no extra asset needed. */
   poster?: string
-  /** Short caption shown under the player */
-  caption: string
+  /** Optional short caption shown under the credit line */
+  caption?: string
   /** Client name for attribution */
   name: string
   /** Client role/company, e.g. "CEO, Middleman" */
@@ -116,7 +116,7 @@ export default function VideoTestimonial({
           <span className="block font-mono text-xs text-muted">{role}</span>
         </span>
       </figcaption>
-      <p className="mt-3 text-center text-sm text-muted">{caption}</p>
+      {caption && <p className="mt-3 text-center text-sm text-muted">{caption}</p>}
     </figure>
   )
 }
