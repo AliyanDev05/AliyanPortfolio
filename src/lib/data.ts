@@ -57,7 +57,7 @@ export const featuredProjects: Project[] = [
     liveUrl: "https://allinoroutmoving.com",
     tint: "#60a5fa",
     art: "moving",
-    image: "/projects/allinoroutmoving.jpg",
+    image: "/projects/preview.webp",
   },
   {
     title: "CareCloud Application",
