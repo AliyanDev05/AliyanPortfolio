@@ -1,16 +1,16 @@
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Marquee from './components/Marquee'
-import FeaturedVideo from './components/FeaturedVideo'
-import Projects from './components/Projects'
-import About from './components/About'
-import Experience from './components/Experience'
-import Services from './components/Services'
-import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Marquee from "./components/Marquee";
+import FeaturedVideo from "./components/FeaturedVideo";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -26,9 +26,9 @@ export default function App() {
         <Hero />
         <Marquee />
         <FeaturedVideo />
-        <Projects />
-        <About />
         <Experience />
+        <About />
+        <Projects />
         <Services />
         <Testimonials />
         <Contact />
@@ -37,5 +37,5 @@ export default function App() {
       <Analytics />
       <SpeedInsights />
     </div>
-  )
+  );
 }
