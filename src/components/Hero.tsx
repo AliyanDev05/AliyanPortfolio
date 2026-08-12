@@ -20,7 +20,7 @@ function TerminalCard() {
           <span className="text-accent">~ $</span> <span className="text-white">whoami</span>
         </p>
         <p className="text-muted">
-          Full-stack engineer. React, TypeScript, Node.js.
+          Full-stack engineer. React, TypeScript, Node.js, Python.
           <br />
           I turn ideas into products that ship.
         </p>
@@ -85,7 +85,7 @@ export default function Hero() {
 
             <motion.p {...enter(0.16)} className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
               I'm <span className="font-medium text-white">{site.name}</span> — a full-stack software
-              engineer specializing in React, TypeScript and Node.js. I help startups and businesses
+              engineer specializing in React, TypeScript and Node.js, Python. I help startups and businesses
               turn ideas into fast, reliable products, from first commit to production.
             </motion.p>
 

@@ -204,9 +204,9 @@ export const services = [
       "Custom web apps from database to UI — dashboards, portals, SaaS MVPs. One developer, full ownership, no hand-off friction.",
   },
   {
-    title: "E-commerce & payments",
+    title: "CareCloud Healthcare Applications",
     description:
-      "Storefronts and checkout flows with Stripe integration, order management and the page speed that keeps carts from being abandoned.",
+      "Contribute to a large-scale healthcare platform migration from a legacy ActionScript codebase to a React/TypeScript Nx monorepo.",
   },
   {
     title: "APIs & integrations",

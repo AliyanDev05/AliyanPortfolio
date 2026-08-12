@@ -9,7 +9,7 @@ export default function Experience() {
       eyebrow="Experience"
       title={
         <>
-          Three years of <span className="text-accent">shipping for clients</span>
+          Five years of <span className="text-accent">shipping for clients</span>
         </>
       }
     >
